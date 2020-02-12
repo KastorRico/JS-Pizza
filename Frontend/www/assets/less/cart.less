@@ -1,6 +1,86 @@
 #cart{
   position: fixed;
-  width: 200px;
+  width: 300px;
   height: 100%;
   background: white;
+  z-index:1;
+  top: 0;
+  right: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#cart .label{
+  border-radius: 100%;
+  margin-left: 5px;
+}
+
+.order{
+  padding: 20px;
+  position:	relative;
+}
+
+.order .text{
+  font-size: 15px;
+  font-weight: bold;
+}
+#clear{
+  position:	absolute;
+  right:5px;
+  color: #999999;
+  font-size: 10px;
+}
+
+.products{
+  background: #f5f5f5;
+  height: auto;
+}
+.one_product {
+  padding: 10px;
+  border-bottom: #dddddd solid 1px;
+}
+.one_product .name{
+  color: @mainColor;
+  font-size: 18px;
+}
+.one_product .btn{
+  border-radius: 100%;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.one_product .cross{
+ color: @mainColor;
+  margin-left: 15px;
+  box-shadow: inset 0 -6px 15px -8px grey;
+}
+.one_product .buy{
+  font-weight: bold;
+  font-size: 12px;
+}
+.size{
+  padding-right: 10px;
+}
+
+.finish{
+  position:	absolute;
+  font-weight: bold;
+  padding: 10px;
+  bottom: 0;
+  height: 120px;
+  width: 100%;
+}
+
+.finish .btn{
+  position:	absolute;
+  width: 200px;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 25px;
+}
+
+#total_cost{
+  position:	absolute;
+  right:5px;
+  font-size: 18px;
 }
