@@ -1,22 +1,28 @@
 #cart{
+  background: #f5f5f5;
   position: fixed;
   width: 300px;
   height: 100%;
-  background: white;
   z-index:1;
   top: 0;
   right: 0;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  overflow: auto;
 }
 
-#cart .label{
+.order .label{
   border-radius: 100%;
   margin-left: 5px;
 }
 
 .order{
+  position: fixed;
+  background: white;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 300px;
   padding: 20px;
-  position:	relative;
 }
 
 .order .text{
@@ -31,8 +37,8 @@
 }
 
 .products{
-  background: #f5f5f5;
-  height: auto;
+  margin-top: 60px;
+  margin-bottom: 120px;
 }
 .one_product {
   padding: 10px;
@@ -62,12 +68,15 @@
 }
 
 .finish{
-  position:	absolute;
+  position: fixed;
+  background: white;
   font-weight: bold;
-  padding: 10px;
   bottom: 0;
+  right: 0;
+  padding: 10px;
   height: 120px;
-  width: 100%;
+  width: 300px;
+  z-index:1;
 }
 
 .finish .btn{

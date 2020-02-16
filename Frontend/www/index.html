@@ -30,16 +30,21 @@
     </div>
 </div>
 
-<div class="container">
-    <div id="top">
-        <div id="t">
-            <p>(044) 222 5 222</p>
-            <p>24 години / 7 днів на тиждень</p>
-            <p>Безкоштовна доставка піци</p>
-            <a href="#" class="btn btn-warning">Войти</a>
-        </div>
-        Піца
+<div id="top">
+    <div id="t">
+        <p id="tel">(044) 222 5 222</p>
+        <p id="time">24 години / 7 днів на тиждень</p>
+        <p id="deliv">Безкоштовна доставка піци</p>
+        <div href="#" class="btn btn-warning" id="login">Войти</div>
     </div>
+    <div id="b">
+        <p>Піца</p>
+        <div href="#" class="btn btn-warning" id="login_b">Войти</div>
+    </div>
+</div>
+
+<div class="container">
+
     <div class="row" id="pizza_list">
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail pizza-card">
@@ -132,11 +137,11 @@
     </div>
 </div>
 
+<div class="order">
+    <span class="text">Замовлення</span><span class="label label-warning">3</span>
+    <span id="clear">Очистити замовлення</span>
+</div>
 <div id="cart">
-    <div class="order">
-        <span class="text">Замовлення</span><span class="label label-warning">3</span>
-        <span id="clear">Очистити замовлення</span>
-    </div>
     <div class="products">
         <div class="one_product">
             <span class="name">Міксовий поло(Мала)</br></span>
@@ -176,10 +181,10 @@
             </div>
         </div>
     </div>
-    <div class="finish">
-        <div class="text">Сума замовлення<span id="total_cost">898грн</span></div>
-        <a href="#" class="btn btn-warning">Замовити</a>
-    </div>
+</div>
+<div class="finish">
+    <div class="text">Сума замовлення<span id="total_cost">898грн</span></div>
+    <a href="#" class="btn btn-warning">Замовити</a>
 </div>
 
 <!-- jQuery JavaScript -->
